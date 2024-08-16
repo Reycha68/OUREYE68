@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- titre de la page -->
+    <title>Cours html de zéro</title>
+    <!-- icone de l'onglet -->
+    <link rel="shortcut icon" href="./logo head.png">
+</head>
+
+<body>
+    <nav>
+        <!-- UL =Unordered List -->
+        <ul>
+            <li>Accueil</li>
+            <li>Boutiquex</li>
+            <li><a href="#form">Formulaire</a></li>
+        </ul>
+    </nav>
+    <header>
+        <!-- un seul H1 par page -->
+        <h1>ceci est le titre principal</h1>
+        <p>
+            texte classsique<em>texte en italique</em> <strong>texte en gras</strong>
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Id beatae, sed nesciunt sequi fuga atque tempora itaque.
+            Vero et at perspiciatis a, blanditiis ratione,
+            laboriosam nobis temporibus ullam aperiam deserunt?</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Ordered List</h2>
+            <ol>
+                <li>ceci est une</li>
+                <li>liste dans</li>
+                <li>l'ordre</li>
+            </ol>
+        </section>
+
+        <section>
+            <h3>Image en html</h3>
+            <img src="./BG.webp" height="200" alt="image-section">
+            <!-- l'ALT de l'image pour l'accesssibilité -->
+
+            <div>
+                <h4>Tableau</h4>
+                <table border="4" cellpadding="10" cellspacing="4" style="text-align: center;">
+                    <!-- thead est pour l'entete du tableau -->
+                    <thead>
+                        <tr>
+                            <th>col 1</th>
+                            <th>col 2</th>
+                            <th>col 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2">cell 1</td>
+                            <td>cell 2</td>
+                            <td>cell 3</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">cell 4</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <h5><i>&#8594;</i>Les liens</h5>
+                <!-- _blank permet de créer un nouvel onglet -->
+                <a href="https://htmlcheatsheet.com" target="_blank">HTML Cheat Sheet</a>
+            </div>
+            <div>
+                <h6><span>&#128190;</span>Vidéo</h6>
+                <video src="./video.mp4" height="200" autoplay muted loop></video>
+            </div>
+        </section>
+        <section id="form">
+            <h2>Les formulaire</h2>
+            <form action="">
+                <!-- "for" et "id" permet de lier le label à l'input -->
+                <label for="name">Nom</label>
+                <input type="text" id="name" placeholder="Entrer votre nom" />
+
+                <br />
+
+                <label for="age">Entrer votre age</label>
+                <input type="number" id="age" value="18" />
+
+                <br />
+
+                <!-- input de tyype select -->
+                <label for="gender">Genre</label>
+                <select id="gender">
+                    <option value="Femme">Femme</option>
+                    <option value="Homme">Homme</option>
+                    <option value="Autre">Autre</option>
+                </select>
+
+                <!-- input de type radio -->
+                <div>
+                    <input type="radio" name="type" id="human" checked>
+                    <label for="human">Humain</label>
+
+                    <input type="radio" name="type" id="dog">
+                    <label for="dog">Chien</label>
+
+                    <input type="radio" name="type" id="cut">
+                    <label for="cut">Chat</label>
+                </div>
+                <textarea placeholder="Votre message..." cols="30" rows="10"></textarea>
+
+                <br />
+
+                <!-- input de type checkbox -->
+                <input type="checkbox" name="" id="cgv">
+                <label for="cgv">Accepter les conditions generales</label>
+
+                <br />
+
+                <!-- input de tpe submit permet de valider le formulaire -->
+                <input type="submit" value="ceci est le bouton pour valider le formulaire">
+            </form>
+            <button>ceci est un bouton</button>
+        </section>
+    </main>
+    <!-- Mail et envoie de fichier -->
+    <footer>
+        <h2><a href="mailto:oureyendoye68@gamil.com">Contactez-moi !</a></h2>
+        <a href="./notice.txt" download="Notice">Telecharger la notice</a>
+    </footer>
+</body>
+
+</html>
